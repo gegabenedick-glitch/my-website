@@ -8,30 +8,40 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
             background: linear-gradient(135deg, #74ebd5, #9face6);
-            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
             text-align: center;
         }
 
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* CONTAINER */
         .container {
             background: white;
             width: 80%;
             max-width: 600px;
-            margin: 50px auto;
+            margin: 30px auto;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            color: #4a4a4a;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #555;
-            margin-top: 20px;
+            text-align: center;
         }
 
         img {
@@ -41,33 +51,32 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        h1 {
+            margin-bottom: 10px;
+        }
+
         p {
             font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .info {
-            margin-top: 10px;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- HOME SECTION -->
+    <div class="container" id="home">
 
         <h1>My Website</h1>
 
-        <div class="info">
-            <p><strong>Name:</strong> Benedick Gega</p>
-            <p><strong>Section:</strong> BSIT III-F2</p>
-        </div>
+        <p><strong>Name:</strong> Benedick Gega</p>
+        <p><strong>Section:</strong> BSIT III-F2</p>
 
         <h2>Image from File Server</h2>
 
@@ -75,10 +84,19 @@
 
         <p>This website shows the connection between web hosting and file hosting.</p>
 
-        <div class="footer">
-            © 2026 My Simple Website
-        </div>
+    </div>
 
+    <!-- ABOUT SECTION -->
+    <div class="container" id="about">
+        <h2>About</h2>
+        <p>This website is created for educational purposes to demonstrate web hosting and file hosting integration.</p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="container" id="contact">
+        <h2>09064588671</h2>
+        <p>Email: gegabenadick@gmail.com </p>
+        <p>Section: BSIT III-F2</p>
     </div>
 
 </body>
