@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        img {
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .info {
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>My Website</h1>
-    <p>Name: Benedick Gega</p>
-    <p>Section: BSIT III-F2 </p>
+    <div class="container">
 
-    <h2>Image from File Server</h2>
-    <img src="https://drive.google.com/uc?export=view&id=11C4Z69SPeS-gwuFdZwazcxQhZ1BqaXxy" width="300" alt="My Image">
+        <h1>My Website</h1>
 
-    <p>This website shows the connection between web hosting and file hosting.</p>
+        <div class="info">
+            <p><strong>Name:</strong> Benedick Gega</p>
+            <p><strong>Section:</strong> BSIT III-F2</p>
+        </div>
+
+        <h2>Image from File Server</h2>
+
+        <img src="https://drive.google.com/uc?export=view&id=11C4Z69SPeS-gwuFdZwazcxQhZ1BqaXxy" alt="My Image">
+
+        <p>This website shows the connection between web hosting and file hosting.</p>
+
+        <div class="footer">
+            © 2026 My Simple Website
+        </div>
+
+    </div>
 
 </body>
 </html>
